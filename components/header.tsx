@@ -93,52 +93,54 @@ export function Header() {
             </span>
           </Link>
 
-          <nav className="hidden xl:flex items-center gap-4 2xl:gap-6 flex-1 justify-center mx-4">
-            <Link
-              href="/who-we-serve"
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
-            >
-              Who We Serve
-            </Link>
-            <Link
-              href="/#what-we-do"
-              onClick={(e) => handleNavClick(e, "/#what-we-do")}
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
-            >
-              What We Do
-            </Link>
-            <Link
-              href="/#our-story"
-              onClick={(e) => handleNavClick(e, "/#our-story")}
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
-            >
-              Our Story
-            </Link>
-            <Link
-              href="/#community-partners"
-              onClick={(e) => handleNavClick(e, "/#community-partners")}
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
-            >
-              Community Partners
-            </Link>
-            <Link
-              href="/scholars"
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
-            >
-              Scholars
-            </Link>
-            <Link
-              href="/faq"
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
-            >
-              FAQ
-            </Link>
-            <Link
-              href="/connect"
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
-            >
-              Connect
-            </Link>
+          <nav className="hidden xl:flex items-center justify-center flex-1 mx-6 2xl:mx-10">
+            <div className="flex items-center gap-1 2xl:gap-2">
+              <Link
+                href="/who-we-serve"
+                className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
+              >
+                Who We Serve
+              </Link>
+              <Link
+                href="/#what-we-do"
+                onClick={(e) => handleNavClick(e, "/#what-we-do")}
+                className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
+              >
+                What We Do
+              </Link>
+              <Link
+                href="/#our-story"
+                onClick={(e) => handleNavClick(e, "/#our-story")}
+                className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
+              >
+                Our Story
+              </Link>
+              <Link
+                href="/#community-partners"
+                onClick={(e) => handleNavClick(e, "/#community-partners")}
+                className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
+              >
+                Community Partners
+              </Link>
+              <Link
+                href="/scholars"
+                className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
+              >
+                Scholars
+              </Link>
+              <Link
+                href="/faq"
+                className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
+              >
+                FAQ
+              </Link>
+              <Link
+                href="/connect"
+                className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
+              >
+                Connect
+              </Link>
+            </div>
           </nav>
 
           <div className="hidden xl:flex items-center flex-shrink-0">
