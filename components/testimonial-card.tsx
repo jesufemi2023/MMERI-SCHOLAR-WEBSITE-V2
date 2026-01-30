@@ -55,19 +55,19 @@ export function TestimonialCard({
         {/* Name & Role */}
         <div className="flex flex-col justify-center min-w-0">
           <h4
-            className="font-sans font-bold text-sm leading-tight truncate"
+            className="font-sans font-bold text-base leading-tight truncate"
             style={{ color: "#1A1A1A" }}
           >
             {name}
           </h4>
           <p
-            className="font-sans text-[11px] leading-snug mt-0.5 truncate"
+            className="font-sans text-xs leading-snug mt-0.5 truncate"
             style={{ color: "#A67C3D" }}
           >
             {role}
           </p>
           <p
-            className="font-sans text-[11px] italic leading-snug truncate"
+            className="font-sans text-xs italic leading-snug truncate"
             style={{ color: "#A67C3D" }}
           >
             {schoolLine}
@@ -77,7 +77,7 @@ export function TestimonialCard({
 
       {/* Quote */}
       <p
-        className="font-serif text-xs mb-3 flex-grow leading-relaxed"
+        className="font-serif text-sm mb-3 flex-grow leading-relaxed"
         style={{ color: "#2D2D2D" }}
       >
         &ldquo;{displayQuote}&rdquo;
@@ -87,13 +87,13 @@ export function TestimonialCard({
       <div className="mt-auto">
         {/* Attribution */}
         <p
-          className="font-sans text-[11px] font-semibold"
+          className="font-sans text-xs font-semibold"
           style={{ color: "#1A1A1A" }}
         >
           {name}
         </p>
         <p
-          className="font-sans text-[10px] mb-2"
+          className="font-sans text-[11px] mb-2"
           style={{ color: "#6B6B6B" }}
         >
           {role}
@@ -111,7 +111,7 @@ export function TestimonialCard({
             return (
               <span
                 key={tag}
-                className="text-[9px] px-2 py-0.5 rounded-full font-sans"
+                className="text-[10px] px-2 py-0.5 rounded-full font-sans"
                 style={{
                   backgroundColor: colorSet.bg,
                   color: colorSet.text,
@@ -127,7 +127,7 @@ export function TestimonialCard({
         {/* Read More */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="font-sans text-[11px] font-medium transition-colors hover:underline"
+          className="font-sans text-xs font-medium transition-colors hover:underline"
           style={{ color: "#1A1A1A" }}
         >
           {isExpanded ? "Read less" : "Read more"}
