@@ -29,7 +29,7 @@ export function TestimonialCard({
 
   return (
     <div
-      className="rounded-lg p-4 transition-all flex flex-col h-full"
+      className="rounded-lg p-6 md:p-8 transition-all flex flex-col h-full"
       style={{
         backgroundColor: "#FDFBF7",
         border: "1px solid #E5E2DA",
@@ -37,9 +37,9 @@ export function TestimonialCard({
       }}
     >
       {/* Header: Photo + Name/Role side by side */}
-      <div className="flex items-start gap-3 mb-3">
+      <div className="flex items-start gap-4 md:gap-5 mb-4 md:mb-5">
         {/* Headshot */}
-        <div className="relative w-12 h-12 flex-shrink-0">
+        <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
           <Image
             src={image || "/placeholder.svg"}
             alt={name}
@@ -55,19 +55,19 @@ export function TestimonialCard({
         {/* Name & Role */}
         <div className="flex flex-col justify-center min-w-0">
           <h4
-            className="font-sans font-bold text-base leading-tight truncate"
+            className="font-sans font-bold text-xl md:text-2xl leading-tight"
             style={{ color: "#1A1A1A" }}
           >
             {name}
           </h4>
           <p
-            className="font-sans text-xs leading-snug mt-0.5 truncate"
+            className="font-sans text-sm md:text-base leading-snug mt-1"
             style={{ color: "#A67C3D" }}
           >
             {role}
           </p>
           <p
-            className="font-sans text-xs italic leading-snug truncate"
+            className="font-sans text-sm md:text-base italic leading-snug"
             style={{ color: "#A67C3D" }}
           >
             {schoolLine}
@@ -77,7 +77,7 @@ export function TestimonialCard({
 
       {/* Quote */}
       <p
-        className="font-serif text-sm mb-3 flex-grow leading-relaxed"
+        className="font-serif text-base md:text-lg mb-4 md:mb-5 flex-grow leading-relaxed"
         style={{ color: "#2D2D2D" }}
       >
         &ldquo;{displayQuote}&rdquo;
@@ -87,20 +87,20 @@ export function TestimonialCard({
       <div className="mt-auto">
         {/* Attribution */}
         <p
-          className="font-sans text-xs font-semibold"
+          className="font-sans text-sm md:text-base font-semibold"
           style={{ color: "#1A1A1A" }}
         >
           {name}
         </p>
         <p
-          className="font-sans text-[11px] mb-2"
+          className="font-sans text-xs md:text-sm mb-3"
           style={{ color: "#6B6B6B" }}
         >
           {role}
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1 mb-2">
+        <div className="flex flex-wrap gap-2 mb-3">
           {tags.map((tag, index) => {
             const tagColors = [
               { bg: "#F7F3EB", text: "#8B7355", border: "#E8E0D0" },
@@ -111,7 +111,7 @@ export function TestimonialCard({
             return (
               <span
                 key={tag}
-                className="text-[10px] px-2 py-0.5 rounded-full font-sans"
+                className="text-xs md:text-sm px-3 py-1 rounded-full font-sans"
                 style={{
                   backgroundColor: colorSet.bg,
                   color: colorSet.text,
@@ -127,7 +127,7 @@ export function TestimonialCard({
         {/* Read More */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="font-sans text-xs font-medium transition-colors hover:underline"
+          className="font-sans text-sm md:text-base font-medium transition-colors hover:underline"
           style={{ color: "#1A1A1A" }}
         >
           {isExpanded ? "Read less" : "Read more"}
