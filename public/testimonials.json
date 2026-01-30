@@ -1,0 +1,124 @@
+{
+  "testimonials": [
+    {
+      "id": "daniel-romero",
+      "name": "Daniel",
+      "role": "First-year college student",
+      "schoolLine": "University of Virginia, Class of 2029",
+      "quoteShort": "Lisa helped me understand each step of the college process and believe that my story and culture are something to be proud of.",
+      "quoteFull": "Before working with Lisa, I felt overwhelmed and unsure where to start, especially as the first in my family to apply to college. She helped me understand each step of the process with patience and support, and she showed me that my background does not limit me. With her guidance, I gained confidence, earned multiple scholarships, and was accepted into a university I once thought was out of reach.",
+      "tags": ["Supportive", "Inspiring", "Empowering"],
+      "image": "/images/testimonials/daniel-romero.jpg"
+    },
+    {
+      "id": "darion",
+      "name": "Darion",
+      "role": "First-year college student",
+      "schoolLine": "Kalamazoo College, Class of 2029",
+      "quoteShort": "Lisa helped me learn how to apply, prepare, and be confident in my choices and abilities.",
+      "quoteFull": "Before working with Lisa, I felt uncertain about the college application process and my ability to succeed. Lisa's direct guidance, high expectations, and belief in me helped me understand what made my story valuable. With her support, I learned how to apply strategically, prepare confidently, and pursue college options that aligned with my goals. I was accepted into college with scholarships that helped reduce the financial burden, and I gained confidence that I could thrive wherever I chose to go.",
+      "tags": ["Inspiring", "Encouraging", "Proactive"],
+      "image": "/images/testimonials/darion.jpg"
+    },
+    {
+      "id": "joel-yanez",
+      "name": "Joel Yanez",
+      "role": "First-year college student",
+      "schoolLine": "UT Austin, McCombs School of Business, Class of 2029",
+      "quoteShort": "Lisa pushed me to apply to college and believe I could succeed, even when I didn't think college was for me.",
+      "quoteFull": "Before working with Lisa, I was lost and unmotivated and didn't even want to apply to college. Writing my personal statement felt impossible, and I didn't believe I was capable. Lisa was direct, honest, and pushed me to do the work even when it was uncomfortable. With her guidance, I gained confidence, applied to college, and was accepted into UT Austin's McCombs School of Business. Coming from where I'm from, that felt impossible at one point, and now it's my reality.",
+      "tags": ["Amazing", "Electric", "Interesting"],
+      "image": "/images/testimonials/joel-yanez.jpg"
+    },
+    {
+      "id": "adora",
+      "name": "Adora",
+      "role": "First-year college student",
+      "schoolLine": "Reed College, Class of 2029",
+      "quoteShort": "Lisa helped me narrow my story, overcome self-doubt, and approach the college process with confidence.",
+      "quoteFull": "Before working with Lisa, I felt overwhelmed by the college process, especially when it came to writing my essays. Lisa helped me narrow down my hook and build a story that felt true to who I am. What stood out most was her relentlessness and encouragement in helping me overcome self-doubt. Through this process, I learned that my story and culture are not obstacles, but a foundation for my future. With her guidance, I was accepted into Reed College and gained confidence in my ability to lead, no matter my surroundings.",
+      "tags": ["Supportive", "Patient", "Kind"],
+      "image": "/images/testimonials/adora.jpg"
+    },
+    {
+      "id": "jesua-trejo",
+      "name": "Jesua Trejo",
+      "role": "First-year college student",
+      "schoolLine": "University of Pennsylvania, Class of 2029",
+      "quoteShort": "Lisa pushed me to lock in, take my essays seriously, and believe I was worthy of higher education.",
+      "quoteFull": "Before working with Lisa, I felt unsure about the college process, especially when it came to writing my essays. Lisa helped me formulate my ideas, revise my work, and pushed me to stay focused and disciplined. What stood out most was her honesty—she didn't sugarcoat anything, and that pressure helped me do better. Through this process, I learned that I was worthy of higher education. With her guidance, I was accepted to the University of Pennsylvania and earned significant scholarship support.",
+      "tags": ["Serious", "Fun", "Inspiring"],
+      "image": "/images/testimonials/jesua-trejo.jpg"
+    },
+    {
+      "id": "julianne-velez",
+      "name": "Julianne",
+      "role": "College student",
+      "schoolLine": "Wellesley College, Class of 2027",
+      "quoteShort": "Lisa helped me feel secure in the college application process and confident enough to pursue a rigorous school.",
+      "quoteFull": "Before working with Lisa, I felt scared and unsure about the college application process. The materials and expectations felt overwhelming. Lisa's consistency, honesty, and encouragement helped me feel more secure and supported as I applied to colleges. Through this experience, I gained confidence in my ability to pursue higher education and challenge myself academically. I learned to be proud of my background and to trust that I belonged in rigorous spaces like Wellesley College.",
+      "tags": ["Truthful", "Supportive", "Kind"],
+      "image": "/images/testimonials/julianne-velez.jpg"
+    },
+    {
+      "id": "elizabeth",
+      "name": "Elizabeth",
+      "role": "First-year college student",
+      "schoolLine": "Mount Holyoke College, Class of 2029",
+      "quoteShort": "Lisa helped me stay motivated and believe I could get into college, even when I felt uneasy about the process.",
+      "quoteFull": "Before working with Lisa, I felt uneasy about the college process and unsure of myself. Staying motivated through the work was the hardest part. Lisa was always there to help, which made a big difference when things felt overwhelming. Through this experience, I learned to keep pushing forward and trust my ability to succeed. With her support, I was accepted into my first-choice college, Mount Holyoke, and gained confidence in how far I've come.",
+      "tags": ["Enlightening", "Compassionate", "Easy"],
+      "image": "/images/testimonials/elizabeth.jpg"
+    },
+    {
+      "id": "rodrigo-angulo",
+      "name": "Rodrigo",
+      "role": "Second-year college student",
+      "schoolLine": "Lehigh University, Class of 2028",
+      "quoteShort": "Lisa helped me understand the college process and believe I belonged at a highly selective private university.",
+      "quoteFull": "Before working with Lisa, I felt nervous about the college process, especially whether I was a fit for a highly selective school and how I would afford it. Lisa helped me understand the application process and guided me through writing my personal statement and supplemental essays with clear, honest feedback. What stood out most was her seriousness and directness. She held me accountable and expected my best. Through this process, I learned that my story and culture are important and that I belonged in rigorous academic spaces. With her support, I was accepted into Lehigh University, my dream school.",
+      "tags": ["Committed", "Stern", "Blunt"],
+      "image": "/images/testimonials/rodrigo-angulo.jpg"
+    },
+    {
+      "id": "aysha-alibin-skinner",
+      "name": "Aysha",
+      "role": "First-year college student",
+      "schoolLine": "Vanderbilt University, Class of 2029",
+      "quoteShort": "Lisa helped me turn my lived experiences into a powerful story and believe that my background fuels my future.",
+      "quoteFull": "Before working with Lisa, I felt overwhelmed and invisible in the college process. As a first-generation student, I didn't know how to begin or whether my story even mattered. Lisa helped me piece everything together: my community, my responsibilities, my leadership, and my goals. We turned them into essays that were real and honest. What stood out most was her belief in me and her accountability. She never reduced me to a checklist; she helped me see that my story and culture are powerful. With her guidance, I applied Early Decision and was admitted to Vanderbilt University. I gained clarity, confidence, and the belief that my background doesn't limit my future. It fuels it.",
+      "tags": ["Empowering", "Uplifting", "Life-changing"],
+      "image": "/images/testimonials/aysha-alibin-skinner.jpg"
+    },
+    {
+      "id": "aairah-hicks",
+      "name": "Aairah",
+      "role": "First-year college student",
+      "schoolLine": "Kalamazoo College, Class of 2029",
+      "quoteShort": "Lisa helped me see the importance of finding a college where I'd feel at home.",
+      "quoteFull": "Before working with Lisa, I wasn't sure what I was looking for in a college. Lisa helped me identify my values and what truly mattered in my educational journey. With her guidance, I found Kalamazoo College, where I feel supported and challenged. She helped me believe in my potential and navigate the entire process with confidence and clarity.",
+      "tags": ["Guiding", "Empowering", "Supportive"],
+      "image": "/images/testimonials/aairah-hicks.jpg"
+    },
+    {
+      "id": "marcus-johnson",
+      "name": "Marcus",
+      "role": "First-year college student",
+      "schoolLine": "Howard University, Class of 2029",
+      "quoteShort": "Lisa believed in my story when I didn't believe in myself, and that changed everything.",
+      "quoteFull": "Before meeting Lisa, I struggled with confidence and doubted whether I belonged in higher education. She took the time to understand my background, my dreams, and my fears. Lisa's unwavering belief in me, combined with her honest feedback, transformed how I saw myself. With her mentorship, I was accepted to Howard University and discovered a renewed sense of purpose and belonging.",
+      "tags": ["Believing", "Transformative", "Honest"],
+      "image": "/images/testimonials/marcus-johnson.jpg"
+    },
+    {
+      "id": "sofia-martinez",
+      "name": "Sofia",
+      "role": "First-year college student",
+      "schoolLine": "Duke University, Class of 2029",
+      "quoteShort": "Lisa helped me see my immigrant background as a strength, not a barrier.",
+      "quoteFull": "Coming from an immigrant family, I initially saw my background as something that might hold me back. Lisa helped me reframe my narrative and see the resilience, determination, and unique perspective my background brought. She guided me through the application process with cultural sensitivity and strategic insight. With her support, I was accepted to Duke University and now embrace my story with pride.",
+      "tags": ["Empowering", "Culturally-aware", "Strategic"],
+      "image": "/images/testimonials/sofia-martinez.jpg"
+    }
+  ]
+}
