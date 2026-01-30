@@ -88,7 +88,7 @@ export default function ScholarsPage() {
           <div
             className="rounded-lg p-8 md:p-12 mb-16"
             style={{
-              backgroundColor: "#FFFFFF",
+              backgroundColor: "#F8F6E8",
               border: "1px solid #D6D9DC",
               boxShadow: "0 1px 3px rgba(0, 0, 0, 0.08)",
             }}
@@ -118,7 +118,7 @@ export default function ScholarsPage() {
                   className="font-serif font-semibold px-5 py-2 rounded-lg transition-all"
                   style={{
                     backgroundColor:
-                      selectedFilter === filter.value ? "#092B43" : "#F0E5D5",
+                      selectedFilter === filter.value ? "#092B43" : "#F9F4F2",
                     color: selectedFilter === filter.value ? "#faf9f6" : "#092B43",
                     border:
                       selectedFilter === filter.value
@@ -189,7 +189,7 @@ export default function ScholarsPage() {
                     key={story.id}
                     className="p-8 text-center rounded-lg transition-all"
                     style={{
-                      backgroundColor: "#F0E5D5",
+                      backgroundColor: "#F9F4F2",
                       border: "1px solid #D6D9DC",
                       boxShadow: "0 1px 3px rgba(0, 0, 0, 0.08)",
                     }}

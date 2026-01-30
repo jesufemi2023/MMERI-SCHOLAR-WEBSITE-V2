@@ -74,7 +74,7 @@ export function MoreScholarJourneys({
   }
 
   return (
-    <section className="w-full py-16 md:py-20" style={{ backgroundColor: "#F6EFDF" }}>
+    <section className="w-full py-16 md:py-20" style={{ backgroundColor: "#F9F4F2" }}>
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Section Title */}
         <h2

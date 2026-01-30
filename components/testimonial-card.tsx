@@ -29,16 +29,17 @@ export function TestimonialCard({
 
   return (
     <div
-      className="rounded-lg p-5 md:p-6 transition-all flex flex-col h-full"
+      className="rounded-lg p-6 md:p-8 transition-all flex flex-col h-full"
       style={{
-        backgroundColor: "#FFFFFF",
-        border: "1px solid #D6D9DC",
-        boxShadow: "0 1px 3px rgba(0, 0, 0, 0.08)",
+        backgroundColor: "#FDFBF7",
+        border: "1px solid #E5E2DA",
+        boxShadow: "0 1px 3px rgba(0, 0, 0, 0.02)",
       }}
     >
-      {/* Headshot */}
-      <div className="mb-4 flex justify-center">
-        <div className="relative w-14 h-14 md:w-16 md:h-16 flex-shrink-0">
+      {/* Header: Photo + Name/Role side by side */}
+      <div className="flex items-start gap-4 md:gap-5 mb-4 md:mb-5">
+        {/* Headshot */}
+        <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
           <Image
             src={image || "/placeholder.svg"}
             alt={name}
@@ -50,67 +51,88 @@ export function TestimonialCard({
             }}
           />
         </div>
+
+        {/* Name & Role */}
+        <div className="flex flex-col justify-center min-w-0">
+          <h4
+            className="font-sans font-bold text-xl md:text-2xl leading-tight"
+            style={{ color: "#1A1A1A" }}
+          >
+            {name}
+          </h4>
+          <p
+            className="font-sans text-sm md:text-base leading-snug mt-1"
+            style={{ color: "#A67C3D" }}
+          >
+            {role}
+          </p>
+          <p
+            className="font-sans text-sm md:text-base italic leading-snug"
+            style={{ color: "#A67C3D" }}
+          >
+            {schoolLine}
+          </p>
+        </div>
       </div>
-
-      {/* Name */}
-      <h4
-        className="font-serif font-bold text-base md:text-lg text-center mb-1"
-        style={{ color: "#092B43" }}
-      >
-        {name}
-      </h4>
-
-      {/* Role Line */}
-      <p
-        className="font-serif text-xs md:text-sm text-center mb-1"
-        style={{ color: "#6b8e7f" }}
-      >
-        {role}
-      </p>
-
-      {/* School Line */}
-      <p
-        className="font-serif text-xs md:text-sm text-center mb-4"
-        style={{ color: "#6b8e7f" }}
-      >
-        {schoolLine}
-      </p>
 
       {/* Quote */}
       <p
-        className="font-serif text-sm mb-4 flex-grow"
-        style={{ color: "#092B43", lineHeight: "1.5" }}
+        className="font-serif text-base md:text-lg mb-4 md:mb-5 flex-grow leading-relaxed"
+        style={{ color: "#2D2D2D" }}
       >
-        {displayQuote}
+        &ldquo;{displayQuote}&rdquo;
       </p>
 
-      {/* Tags */}
-      <div className="flex flex-wrap gap-2 mb-4 justify-center">
-        {tags.map((tag) => (
-          <span
-            key={tag}
-            className="text-xs px-3 py-1 rounded-full font-serif"
-            style={{
-              backgroundColor: "#f5f5f5",
-              color: "#092B43",
-              border: "1px solid #e5e5e5",
-            }}
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
+      {/* Footer: Attribution + Tags + Read More */}
+      <div className="mt-auto">
+        {/* Attribution */}
+        <p
+          className="font-sans text-sm md:text-base font-semibold"
+          style={{ color: "#1A1A1A" }}
+        >
+          {name}
+        </p>
+        <p
+          className="font-sans text-xs md:text-sm mb-3"
+          style={{ color: "#6B6B6B" }}
+        >
+          {role}
+        </p>
 
-      {/* Read More / Read Less */}
-      {quoteFull && quoteShort !== quoteFull && (
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mb-3">
+          {tags.map((tag, index) => {
+            const tagColors = [
+              { bg: "#F7F3EB", text: "#8B7355", border: "#E8E0D0" },
+              { bg: "#EEF2EF", text: "#5A7A65", border: "#D8E2DC" },
+              { bg: "#F5F0E8", text: "#7A6B55", border: "#E5DDD0" },
+            ]
+            const colorSet = tagColors[index % tagColors.length]
+            return (
+              <span
+                key={tag}
+                className="text-xs md:text-sm px-3 py-1 rounded-full font-sans"
+                style={{
+                  backgroundColor: colorSet.bg,
+                  color: colorSet.text,
+                  border: `1px solid ${colorSet.border}`,
+                }}
+              >
+                {tag}
+              </span>
+            )
+          })}
+        </div>
+
+        {/* Read More */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="font-serif text-sm font-semibold text-center transition-colors hover:opacity-70"
-          style={{ color: "#092B43" }}
+          className="font-sans text-sm md:text-base font-medium transition-colors hover:underline"
+          style={{ color: "#1A1A1A" }}
         >
           {isExpanded ? "Read less" : "Read more"}
         </button>
-      )}
+      </div>
     </div>
   )
 }
