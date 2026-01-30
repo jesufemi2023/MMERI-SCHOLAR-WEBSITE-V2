@@ -29,17 +29,17 @@ export function TestimonialCard({
 
   return (
     <div
-      className="rounded-lg p-5 md:p-6 transition-all flex flex-col h-full"
+      className="rounded-lg p-4 transition-all flex flex-col h-full"
       style={{
         backgroundColor: "#FDFBF7",
         border: "1px solid #E5E2DA",
-        boxShadow: "0 1px 4px rgba(0, 0, 0, 0.03)",
+        boxShadow: "0 1px 3px rgba(0, 0, 0, 0.02)",
       }}
     >
       {/* Header: Photo + Name/Role side by side */}
-      <div className="flex items-start gap-4 mb-4">
+      <div className="flex items-start gap-3 mb-3">
         {/* Headshot */}
-        <div className="relative w-16 h-16 md:w-[72px] md:h-[72px] flex-shrink-0">
+        <div className="relative w-12 h-12 flex-shrink-0">
           <Image
             src={image || "/placeholder.svg"}
             alt={name}
@@ -53,21 +53,21 @@ export function TestimonialCard({
         </div>
 
         {/* Name & Role */}
-        <div className="flex flex-col justify-center pt-1">
+        <div className="flex flex-col justify-center min-w-0">
           <h4
-            className="font-sans font-bold text-base md:text-lg leading-tight"
+            className="font-sans font-bold text-sm leading-tight truncate"
             style={{ color: "#1A1A1A" }}
           >
             {name}
           </h4>
           <p
-            className="font-sans text-xs md:text-[13px] leading-snug mt-0.5"
+            className="font-sans text-[11px] leading-snug mt-0.5 truncate"
             style={{ color: "#A67C3D" }}
           >
             {role}
           </p>
           <p
-            className="font-sans text-xs md:text-[13px] italic leading-snug"
+            className="font-sans text-[11px] italic leading-snug truncate"
             style={{ color: "#A67C3D" }}
           >
             {schoolLine}
@@ -77,30 +77,30 @@ export function TestimonialCard({
 
       {/* Quote */}
       <p
-        className="font-serif text-[13px] md:text-sm mb-4 flex-grow leading-relaxed"
+        className="font-serif text-xs mb-3 flex-grow leading-relaxed"
         style={{ color: "#2D2D2D" }}
       >
         &ldquo;{displayQuote}&rdquo;
       </p>
 
-      {/* Footer: Name attribution + Tags + Read More */}
+      {/* Footer: Attribution + Tags + Read More */}
       <div className="mt-auto">
         {/* Attribution */}
         <p
-          className="font-sans text-xs font-semibold mb-1"
+          className="font-sans text-[11px] font-semibold"
           style={{ color: "#1A1A1A" }}
         >
           {name}
         </p>
         <p
-          className="font-sans text-[11px] mb-3"
+          className="font-sans text-[10px] mb-2"
           style={{ color: "#6B6B6B" }}
         >
           {role}
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5 mb-3">
+        <div className="flex flex-wrap gap-1 mb-2">
           {tags.map((tag, index) => {
             const tagColors = [
               { bg: "#F7F3EB", text: "#8B7355", border: "#E8E0D0" },
@@ -111,7 +111,7 @@ export function TestimonialCard({
             return (
               <span
                 key={tag}
-                className="text-[10px] md:text-[11px] px-2.5 py-1 rounded-full font-sans"
+                className="text-[9px] px-2 py-0.5 rounded-full font-sans"
                 style={{
                   backgroundColor: colorSet.bg,
                   color: colorSet.text,
@@ -127,7 +127,7 @@ export function TestimonialCard({
         {/* Read More */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="font-sans text-xs font-medium transition-colors hover:underline"
+          className="font-sans text-[11px] font-medium transition-colors hover:underline"
           style={{ color: "#1A1A1A" }}
         >
           {isExpanded ? "Read less" : "Read more"}
