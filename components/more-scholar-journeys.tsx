@@ -85,10 +85,10 @@ export function MoreScholarJourneys({
         </h2>
 
         {/* Mobile Carousel */}
-        <div className="lg:hidden">
+        <div className="lg:hidden pt-10">
           <div
             ref={scrollContainerRef}
-            className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory"
+            className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-4 pb-4"
             style={{
               scrollBehavior: "smooth",
               WebkitOverflowScrolling: "touch",
@@ -98,8 +98,7 @@ export function MoreScholarJourneys({
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="flex-shrink-0 w-full snap-start"
-                style={{ width: "calc(90vw - 8px)" }}
+                className="flex-shrink-0 snap-center"
               >
                 <TestimonialCard {...testimonial} />
               </div>
@@ -126,7 +125,7 @@ export function MoreScholarJourneys({
         </div>
 
         {/* Desktop Grid */}
-        <div className="hidden lg:grid grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="hidden lg:flex flex-wrap justify-center gap-8 pt-10">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} {...testimonial} />
           ))}
