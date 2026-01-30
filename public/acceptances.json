@@ -25,12 +25,6 @@
       "category": ["hbcu", "selective"]
     },
     {
-      "id": "babson",
-      "name": "Babson College",
-      "logo": "/college-logos/babson.png",
-      "category": ["selective", "stem"]
-    },
-    {
       "id": "bryn-mawr",
       "name": "Bryn Mawr College",
       "logo": "/college-logos/bryn-mawr.png",
