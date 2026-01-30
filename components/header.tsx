@@ -26,7 +26,7 @@ export function Header() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1280) {
         setIsMobileMenuOpen(false)
       }
     }
@@ -93,60 +93,60 @@ export function Header() {
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-8 xl:gap-10 absolute left-1/2 transform -translate-x-1/2">
+          <nav className="hidden xl:flex items-center gap-4 2xl:gap-6 flex-1 justify-center mx-4">
             <Link
               href="/who-we-serve"
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-[15px] whitespace-nowrap"
+              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
             >
               Who We Serve
             </Link>
             <Link
               href="/#what-we-do"
               onClick={(e) => handleNavClick(e, "/#what-we-do")}
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-[15px] whitespace-nowrap"
+              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
             >
               What We Do
             </Link>
             <Link
               href="/#our-story"
               onClick={(e) => handleNavClick(e, "/#our-story")}
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-[15px] whitespace-nowrap"
+              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
             >
               Our Story
             </Link>
             <Link
               href="/#community-partners"
               onClick={(e) => handleNavClick(e, "/#community-partners")}
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-[15px] whitespace-nowrap"
+              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
             >
               Community Partners
             </Link>
             <Link
               href="/scholars"
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-[15px] whitespace-nowrap"
+              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
             >
               Scholars
             </Link>
             <Link
               href="/faq"
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-[15px] whitespace-nowrap"
+              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
             >
               FAQ
             </Link>
             <Link
               href="/connect"
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-[15px] whitespace-nowrap"
+              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold text-sm 2xl:text-[15px] whitespace-nowrap"
             >
               Connect
             </Link>
           </nav>
 
-          <div className="hidden lg:flex items-center">
+          <div className="hidden xl:flex items-center flex-shrink-0">
             <a
               href={WAITLIST_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans bg-mmeri-maroon text-white px-6 py-2.5 rounded-md hover:bg-mmeri-maroon/90 transition-all font-semibold text-sm shadow-sm hover:shadow-md"
+              className="font-sans bg-mmeri-maroon text-white px-5 py-2.5 rounded-md hover:bg-mmeri-maroon/90 transition-all font-semibold text-sm shadow-sm hover:shadow-md whitespace-nowrap"
             >
               Join Waitlist
             </a>
@@ -154,7 +154,7 @@ export function Header() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-mmeri-navy hover:text-mmeri-maroon transition-colors"
+            className="xl:hidden p-2 text-mmeri-navy hover:text-mmeri-maroon transition-colors"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -162,8 +162,8 @@ export function Header() {
         </div>
 
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          className={`xl:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isMobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <nav className="flex flex-col gap-1 pb-4 border-t border-mmeri-navy/10 pt-4">
