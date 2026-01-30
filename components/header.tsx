@@ -129,18 +129,6 @@ export function Header() {
                 Scholars
               </Link>
               <Link
-                href="/faq"
-                className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
-              >
-                FAQ
-              </Link>
-              <Link
-                href="/resources"
-                className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
-              >
-                Resources
-              </Link>
-              <Link
                 href="/connect"
                 className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
               >
@@ -209,20 +197,6 @@ export function Header() {
               className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold py-2.5 px-3 rounded-lg hover:bg-mmeri-navy/5"
             >
               Scholars
-            </Link>
-            <Link
-              href="/faq"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold py-2.5 px-3 rounded-lg hover:bg-mmeri-navy/5"
-            >
-              FAQ
-            </Link>
-            <Link
-              href="/resources"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold py-2.5 px-3 rounded-lg hover:bg-mmeri-navy/5"
-            >
-              Resources
             </Link>
             <Link
               href="/connect"
