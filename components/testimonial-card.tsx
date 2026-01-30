@@ -29,97 +29,110 @@ export function TestimonialCard({
 
   return (
     <div
-      className="rounded-xl p-6 md:p-7 transition-all flex flex-col h-full"
+      className="rounded-lg p-5 md:p-6 transition-all flex flex-col h-full"
       style={{
         backgroundColor: "#FDFBF7",
-        border: "1px solid #E8E4DC",
-        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
+        border: "1px solid #E5E2DA",
+        boxShadow: "0 1px 4px rgba(0, 0, 0, 0.03)",
       }}
     >
-      {/* Headshot */}
-      <div className="mb-5 flex justify-center">
-        <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
+      {/* Header: Photo + Name/Role side by side */}
+      <div className="flex items-start gap-4 mb-4">
+        {/* Headshot */}
+        <div className="relative w-16 h-16 md:w-[72px] md:h-[72px] flex-shrink-0">
           <Image
             src={image || "/placeholder.svg"}
             alt={name}
             fill
             className="object-cover rounded-full"
-            style={{ border: "3px solid #E8E4DC" }}
             onError={(e) => {
               const img = e.target as HTMLImageElement
               img.src = "/placeholder-user.jpg"
             }}
           />
         </div>
+
+        {/* Name & Role */}
+        <div className="flex flex-col justify-center pt-1">
+          <h4
+            className="font-sans font-bold text-base md:text-lg leading-tight"
+            style={{ color: "#1A1A1A" }}
+          >
+            {name}
+          </h4>
+          <p
+            className="font-sans text-xs md:text-[13px] leading-snug mt-0.5"
+            style={{ color: "#A67C3D" }}
+          >
+            {role}
+          </p>
+          <p
+            className="font-sans text-xs md:text-[13px] italic leading-snug"
+            style={{ color: "#A67C3D" }}
+          >
+            {schoolLine}
+          </p>
+        </div>
       </div>
-
-      {/* Name */}
-      <h4
-        className="font-serif font-bold text-lg md:text-xl text-center mb-1"
-        style={{ color: "#092B43" }}
-      >
-        {name}
-      </h4>
-
-      {/* Role Line */}
-      <p
-        className="font-sans text-xs md:text-sm text-center mb-0.5"
-        style={{ color: "#8B6914" }}
-      >
-        {role}
-      </p>
-
-      {/* School Line */}
-      <p
-        className="font-sans text-xs md:text-sm text-center mb-5 italic"
-        style={{ color: "#7A6B4E" }}
-      >
-        {schoolLine}
-      </p>
 
       {/* Quote */}
       <p
-        className="font-serif text-sm md:text-base mb-5 flex-grow leading-relaxed"
-        style={{ color: "#3A3A3A" }}
+        className="font-serif text-[13px] md:text-sm mb-4 flex-grow leading-relaxed"
+        style={{ color: "#2D2D2D" }}
       >
         &ldquo;{displayQuote}&rdquo;
       </p>
 
-      {/* Tags */}
-      <div className="flex flex-wrap gap-2 mb-4 justify-center">
-        {tags.map((tag, index) => {
-          const tagColors = [
-            { bg: "#F5F0E6", text: "#8B6914", border: "#E5DCC8" },
-            { bg: "#EDF2EE", text: "#4A6B5A", border: "#D4E0D8" },
-            { bg: "#F0EDE8", text: "#6B5A4A", border: "#DDD7CC" },
-          ]
-          const colorSet = tagColors[index % tagColors.length]
-          return (
-            <span
-              key={tag}
-              className="text-xs px-3 py-1.5 rounded-full font-sans font-medium"
-              style={{
-                backgroundColor: colorSet.bg,
-                color: colorSet.text,
-                border: `1px solid ${colorSet.border}`,
-              }}
-            >
-              {tag}
-            </span>
-          )
-        })}
-      </div>
+      {/* Footer: Name attribution + Tags + Read More */}
+      <div className="mt-auto">
+        {/* Attribution */}
+        <p
+          className="font-sans text-xs font-semibold mb-1"
+          style={{ color: "#1A1A1A" }}
+        >
+          {name}
+        </p>
+        <p
+          className="font-sans text-[11px] mb-3"
+          style={{ color: "#6B6B6B" }}
+        >
+          {role}
+        </p>
 
-      {/* Read More / Read Less */}
-      {quoteFull && quoteShort !== quoteFull && (
+        {/* Tags */}
+        <div className="flex flex-wrap gap-1.5 mb-3">
+          {tags.map((tag, index) => {
+            const tagColors = [
+              { bg: "#F7F3EB", text: "#8B7355", border: "#E8E0D0" },
+              { bg: "#EEF2EF", text: "#5A7A65", border: "#D8E2DC" },
+              { bg: "#F5F0E8", text: "#7A6B55", border: "#E5DDD0" },
+            ]
+            const colorSet = tagColors[index % tagColors.length]
+            return (
+              <span
+                key={tag}
+                className="text-[10px] md:text-[11px] px-2.5 py-1 rounded-full font-sans"
+                style={{
+                  backgroundColor: colorSet.bg,
+                  color: colorSet.text,
+                  border: `1px solid ${colorSet.border}`,
+                }}
+              >
+                {tag}
+              </span>
+            )
+          })}
+        </div>
+
+        {/* Read More */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="font-sans text-sm font-medium text-center transition-colors hover:underline"
-          style={{ color: "#8B6914" }}
+          className="font-sans text-xs font-medium transition-colors hover:underline"
+          style={{ color: "#1A1A1A" }}
         >
           {isExpanded ? "Read less" : "Read more"}
         </button>
-      )}
+      </div>
     </div>
   )
 }
