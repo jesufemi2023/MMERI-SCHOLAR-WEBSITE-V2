@@ -1,6 +1,60 @@
 {
   "colleges": [
     {
+      "id": "unc",
+      "name": "University of North Carolina",
+      "logo": "/college-logos/unc.png",
+      "category": ["selective", "flagship"]
+    },
+    {
+      "id": "columbia",
+      "name": "Columbia University",
+      "logo": "/college-logos/columbia.png",
+      "category": ["selective", "ivy"]
+    },
+    {
+      "id": "hopkins",
+      "name": "Johns Hopkins University",
+      "logo": "/college-logos/hopkins.png",
+      "category": ["selective", "stem"]
+    },
+    {
+      "id": "babson",
+      "name": "Babson College",
+      "logo": "/college-logos/babson.png",
+      "category": ["selective", "stem"]
+    },
+    {
+      "id": "colorado-college",
+      "name": "Colorado College",
+      "logo": "/college-logos/colorado-college.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "wesleyan",
+      "name": "Wesleyan University",
+      "logo": "/college-logos/wesleyan.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "vanderbilt",
+      "name": "Vanderbilt University",
+      "logo": "/college-logos/vanderbilt.png",
+      "category": ["selective", "stem"]
+    },
+    {
+      "id": "wake-forest",
+      "name": "Wake Forest University",
+      "logo": "/college-logos/wake-forest.png",
+      "category": ["selective"]
+    },
+    {
+      "id": "virginia",
+      "name": "University of Virginia",
+      "logo": "/college-logos/virginia.png",
+      "category": ["selective", "flagship"]
+    },
+    {
       "id": "bates",
       "name": "Bates College",
       "logo": "/college-logos/bates.png",
