@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { MoreScholarJourneys } from "@/components/more-scholar-journeys"
-import { TestimonialCard } from "@/components/testimonial-card"
 import Image from "next/image"
 
 interface College {
@@ -184,22 +183,49 @@ export default function ScholarsPage() {
               >
                 Featured Scholar Stories
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {testimonials
-                  .filter((t) => ["aysha-alibin-skinner", "darion", "jesua-trejo"].includes(t.id))
-                  .map((testimonial) => (
-                    <TestimonialCard
-                      key={testimonial.id}
-                      id={testimonial.id}
-                      name={testimonial.name}
-                      role={testimonial.role}
-                      schoolLine={testimonial.schoolLine}
-                      quoteShort={testimonial.quoteShort}
-                      quoteFull={testimonial.quoteFull}
-                      tags={testimonial.tags}
-                      image={testimonial.image}
-                    />
-                  ))}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {scholarStories.map((story) => (
+                  <div
+                    key={story.id}
+                    className="p-8 text-center rounded-lg transition-all"
+                    style={{
+                      backgroundColor: "#F9F4F2",
+                      border: "1px solid #D6D9DC",
+                      boxShadow: "0 1px 3px rgba(0, 0, 0, 0.08)",
+                    }}
+                  >
+                    <div className="relative w-24 h-24 mx-auto mb-6">
+                      <Image
+                        src={story.image || "/placeholder.svg"}
+                        alt={story.name}
+                        fill
+                        className="object-cover rounded-full"
+                        onError={(e) => {
+                          const img = e.target as HTMLImageElement
+                          img.src = "/placeholder-user.jpg"
+                        }}
+                      />
+                    </div>
+                    <h4
+                      className="font-serif font-bold text-lg mb-1"
+                      style={{ color: "#092B43" }}
+                    >
+                      {story.name}
+                    </h4>
+                    <p
+                      className="font-serif text-sm mb-4"
+                      style={{ color: "#6b8e7f" }}
+                    >
+                      {story.school}
+                    </p>
+                    <p
+                      className="font-serif text-sm"
+                      style={{ color: "#092B43" }}
+                    >
+                      "{story.description}"
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
