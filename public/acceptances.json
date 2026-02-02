@@ -143,8 +143,8 @@
     {
       "id": 1,
       "name": "Aysha",
-      "school": "Yale University",
-      "image": "/scholar-profiles/ayesha.jpg",
+      "school": "Vanderbilt University, Class of 2029",
+      "image": "/scholar-profiles/aysha.jpg",
       "description": "MMERI helped me turn my lived experiences into a powerful story and believe that my background fuels my future."
     },
     {
@@ -157,7 +157,7 @@
     {
       "id": 3,
       "name": "Darion",
-      "school": "MIT",
+      "school": "Kalamazoo College, Class of 2029",
       "image": "/scholar-profiles/darion.jpg",
       "description": "MMERI helped me learn how to apply, prepare, and be confident in my choices and abilities."
     }
