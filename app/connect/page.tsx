@@ -59,9 +59,6 @@ export default function ConnectPage() {
 
           {/* Ask a Quick Question Form */}
           <div className="mb-12">
-            <h2 className="font-serif text-lg md:text-xl font-bold text-mmeri-navy mb-6">
-              Get MMERI updates and key college planning deadlines & Resources
-            </h2>
             <h3 className="font-sans font-bold text-mmeri-navy text-base mb-6 uppercase tracking-widest">
               Ask a Quick Question
             </h3>
@@ -118,9 +115,12 @@ export default function ConnectPage() {
 
           {/* Newsletter Section */}
           <div className="bg-mmeri-navy text-white p-8 md:p-10">
-            <h2 className="font-serif font-bold text-2xl md:text-3xl mb-8 text-center">
+            <h2 className="font-serif font-bold text-2xl md:text-3xl mb-2">
               Stay informed about our work
             </h2>
+            <p className="font-serif text-lg md:text-xl font-bold text-white mb-8">
+              Get MMERI updates and key college planning deadlines & Resources
+            </p>
             {/* ConvertKit Embed Form */}
             <div
               dangerouslySetInnerHTML={{
