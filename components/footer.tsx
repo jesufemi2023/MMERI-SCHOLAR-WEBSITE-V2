@@ -60,8 +60,8 @@ export function Footer() {
             <a href="mailto:info@mmerischolars.org" className="hover:text-mmeri-gold transition-colors">
               info@mmerischolars.org
             </a>
-            <a href="tel:346-456-4980" className="hover:text-mmeri-gold transition-colors">
-              346 456 4980
+            <a href="tel:832-268-3370" className="hover:text-mmeri-gold transition-colors">
+              (832) 268-3370
             </a>
           </div>
 
