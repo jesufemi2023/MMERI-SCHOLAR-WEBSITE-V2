@@ -129,10 +129,10 @@ export function Header() {
                 Scholars
               </Link>
               <Link
-                href="/feedback"
+                href="/faq"
                 className="font-sans text-mmeri-navy hover:text-mmeri-maroon hover:bg-mmeri-navy/5 transition-all font-semibold text-[13px] 2xl:text-sm whitespace-nowrap px-3 2xl:px-4 py-2 rounded-md"
               >
-                Feedback
+                FAQ
               </Link>
               <Link
                 href="/connect"
@@ -205,11 +205,11 @@ export function Header() {
               Scholars
             </Link>
             <Link
-              href="/feedback"
+              href="/faq"
               onClick={() => setIsMobileMenuOpen(false)}
               className="font-sans text-mmeri-navy hover:text-mmeri-maroon transition-colors font-semibold py-2.5 px-3 rounded-lg hover:bg-mmeri-navy/5"
             >
-              Feedback
+              FAQ
             </Link>
             <Link
               href="/connect"
