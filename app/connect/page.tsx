@@ -115,12 +115,9 @@ export default function ConnectPage() {
 
           {/* Newsletter Section */}
           <div className="bg-mmeri-navy text-white p-8 md:p-10">
-            <h2 className="font-serif font-bold text-2xl md:text-3xl mb-2">
-              Stay informed about our work
-            </h2>
-            <p className="font-serif text-lg md:text-xl font-bold text-white mb-8">
+            <h2 className="font-serif font-bold text-3xl md:text-4xl mb-8">
               Get MMERI updates and key college planning deadlines & Resources
-            </p>
+            </h2>
             {/* ConvertKit Embed Form */}
             <div
               dangerouslySetInnerHTML={{
