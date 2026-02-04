@@ -137,6 +137,66 @@
       "name": "Tulane University",
       "logo": "/college-logos/tulane.png",
       "category": ["selective"]
+    },
+    {
+      "id": "houston",
+      "name": "University of Houston",
+      "logo": "/college-logos/houston.png",
+      "category": ["selective", "stem"]
+    },
+    {
+      "id": "louisiana-state",
+      "name": "Louisiana State University",
+      "logo": "/college-logos/louisiana-state.png",
+      "category": ["selective", "hbcu", "stem"]
+    },
+    {
+      "id": "mount-holyoke",
+      "name": "Mount Holyoke College",
+      "logo": "/college-logos/mount-holyoke.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "kalamazoo",
+      "name": "Kalamazoo College",
+      "logo": "/college-logos/kalamazoo-college.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "occidental",
+      "name": "Occidental College",
+      "logo": "/college-logos/occidental.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "carleton",
+      "name": "Carleton College",
+      "logo": "/college-logos/carleton.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "grinnell",
+      "name": "Grinnell College",
+      "logo": "/college-logos/grinnell.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "boston",
+      "name": "Boston University",
+      "logo": "/college-logos/boston.png",
+      "category": ["selective", "stem"]
+    },
+    {
+      "id": "denison",
+      "name": "Denison University",
+      "logo": "/college-logos/denison.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "connecticut-college",
+      "name": "Connecticut College",
+      "logo": "/college-logos/connecticut-college.png",
+      "category": ["selective", "liberal-arts"]
     }
   ],
   "scholarStories": [
