@@ -137,7 +137,7 @@ export default function ScholarsPage() {
             <div className="mb-12">
               <div className="grid grid-cols-5 md:grid-cols-7 lg:grid-cols-9 gap-3 md:gap-4 mb-8">
                 {filteredColleges
-                  .slice(0, showAllLogos ? filteredColleges.length : 16)
+                  .slice(0, showAllLogos ? filteredColleges.length : 27)
                   .map((college, index) => (
                     <div
                       key={college.id}
@@ -163,41 +163,17 @@ export default function ScholarsPage() {
                       </div>
                     </div>
                   ))}
-                {!showAllLogos &&
-                  filteredColleges.length > 16 &&
-                  filteredColleges[26] && (
-                    <div
-                      className="flex items-center justify-center p-2 rounded-lg transition-all hover:shadow-sm"
-                      style={{
-                        backgroundColor: "#F0E5D5",
-                        border: "1px solid #D6D9DC",
-                        aspectRatio: "1",
-                        boxShadow: "0 1px 3px rgba(0, 0, 0, 0.08)",
-                      }}
-                    >
-                      <div className="relative w-14 h-14">
-                        <Image
-                          src={filteredColleges[26].logo || "/placeholder.svg"}
-                          alt={filteredColleges[26].name}
-                          fill
-                          className="object-contain"
-                          onError={(e) => {
-                            const img = e.target as HTMLImageElement
-                            img.src = "/placeholder-logo.svg"
-                          }}
-                        />
-                      </div>
-                    </div>
-                  )}
               </div>
-              <div className="text-center">
-                <button
-                  onClick={() => setShowAllLogos(!showAllLogos)}
-                  className="font-serif text-mmeri-navy hover:text-mmeri-maroon transition-colors underline cursor-pointer"
-                >
-                  View all {showAllLogos ? filteredColleges.length : 27} acceptances
-                </button>
-              </div>
+              {filteredColleges.length > 27 && (
+                <div className="text-center">
+                  <button
+                    onClick={() => setShowAllLogos(!showAllLogos)}
+                    className="font-serif text-mmeri-navy hover:text-mmeri-maroon transition-colors underline cursor-pointer"
+                  >
+                    View all {filteredColleges.length} acceptances
+                  </button>
+                </div>
+              )}
             </div>
 
             {/* Featured Scholar Stories */}
