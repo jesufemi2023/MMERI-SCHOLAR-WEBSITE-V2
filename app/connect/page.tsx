@@ -1,10 +1,12 @@
 "use client"
 
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export default function ConnectPage() {
+  const [formSubmitted, setFormSubmitted] = useState(false)
+
   useEffect(() => {
     // Load ConvertKit script
     const script = document.createElement("script")
@@ -17,6 +19,22 @@ export default function ConnectPage() {
       if (document.body.contains(script)) {
         document.body.removeChild(script)
       }
+    }
+  }, [])
+
+  useEffect(() => {
+    // Listen for Formspree submission
+    const handleFormspreeSubmit = () => {
+      setFormSubmitted(true)
+      // Reset after 5 seconds to allow re-submission
+      setTimeout(() => setFormSubmitted(false), 5000)
+    }
+
+    // Listen for form submission event
+    const form = document.querySelector('form[action="https://formspree.io/f/mvzzgreg"]')
+    if (form) {
+      form.addEventListener("submit", handleFormspreeSubmit)
+      return () => form.removeEventListener("submit", handleFormspreeSubmit)
     }
   }, [])
 
@@ -100,6 +118,19 @@ export default function ConnectPage() {
                 Submit
               </button>
             </form>
+            {formSubmitted && (
+              <div className="mt-6 p-6 border-l-4 border-mmeri-maroon bg-white">
+                <p className="font-serif text-mmeri-navy mb-4">
+                  Thank you for reaching out! We'll respond within 1-2 business days.
+                </p>
+                <button
+                  onClick={() => window.history.back()}
+                  className="font-sans font-semibold text-mmeri-navy hover:text-mmeri-maroon transition-colors underline cursor-pointer"
+                >
+                  ← Back to Previous Page
+                </button>
+              </div>
+            )}
           </div>
 
           {/* What to Expect */}
