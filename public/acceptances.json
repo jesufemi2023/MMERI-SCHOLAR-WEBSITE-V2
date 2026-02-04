@@ -197,6 +197,66 @@
       "name": "Connecticut College",
       "logo": "/college-logos/connecticut-college.png",
       "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "texas-am",
+      "name": "Texas A&M University",
+      "logo": "/college-logos/texas-am.png",
+      "category": ["selective", "stem"]
+    },
+    {
+      "id": "texas-austin",
+      "name": "University of Texas at Austin",
+      "logo": "/college-logos/texas-austin.png",
+      "category": ["selective", "flagship", "stem"]
+    },
+    {
+      "id": "trinity-ct",
+      "name": "Trinity College Connecticut",
+      "logo": "/college-logos/trinity-ct.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "washington-university",
+      "name": "Washington University in St. Louis",
+      "logo": "/college-logos/washington-university.png",
+      "category": ["selective", "stem"]
+    },
+    {
+      "id": "reed-college",
+      "name": "Reed College",
+      "logo": "/college-logos/reed.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "macalester",
+      "name": "Macalester College",
+      "logo": "/college-logos/macalester.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "wesleyan-ohio",
+      "name": "Wesleyan University of Ohio",
+      "logo": "/college-logos/wesleyan-ohio.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "trinity-university",
+      "name": "Trinity University San Antonio",
+      "logo": "/college-logos/trinity-university.png",
+      "category": ["selective", "stem"]
+    },
+    {
+      "id": "skidmore",
+      "name": "Skidmore College",
+      "logo": "/college-logos/skidmore.png",
+      "category": ["selective", "liberal-arts"]
+    },
+    {
+      "id": "smith",
+      "name": "Smith College",
+      "logo": "/college-logos/smith.png",
+      "category": ["selective", "liberal-arts"]
     }
   ],
   "scholarStories": [
